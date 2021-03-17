@@ -6,8 +6,8 @@ justice
 .. image:: https://img.shields.io/pypi/v/justice.svg
         :target: https://pypi.python.org/pypi/justice
 
-.. image:: https://img.shields.io/travis/SukiCZ/justice.svg
-        :target: https://travis-ci.com/SukiCZ/justice
+.. image:: https://github.com/SukiCZ/justice/actions/workflows/justice-test.yml/badge.svg
+        :target: https://github.com/SukiCZ/justice/actions
 
 .. image:: https://readthedocs.org/projects/justice/badge/?version=latest
         :target: https://justice.readthedocs.io/en/latest/?version=latest

@@ -3,7 +3,7 @@ import argparse
 import pprint
 import sys
 
-from .justice import Justice
+from justice.justice import Justice
 
 
 def main():

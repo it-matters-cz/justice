@@ -1,6 +1,6 @@
-from .abc import AbstractLineParser
-from .empty import EmptyLineParser
-from .company_name import CompanyNameParser
+from justice.parser.line_parser.abc import AbstractLineParser
+from justice.parser.line_parser.company_name import CompanyNameParser
+from justice.parser.line_parser.empty import EmptyLineParser
 
 detail_parser_mapping = {
     'Obchodní firma:': CompanyNameParser,
@@ -10,8 +10,8 @@ detail_parser_mapping = {
 
 __all__ = (
     'AbstractLineParser',
-    'EmptyLineParser',
     'CompanyNameParser',
+    'EmptyLineParser',
 
     'detail_parser_mapping',
 )

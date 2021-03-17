@@ -1,4 +1,4 @@
-from . import AbstractLineParser
+from justice.parser.line_parser import AbstractLineParser
 
 
 class EmptyLineParser(AbstractLineParser):

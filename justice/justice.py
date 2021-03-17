@@ -1,7 +1,7 @@
 """Main module."""
 from pyquery import PyQuery as pq
 
-from .parser import Parser
+from justice.parser import Parser
 
 
 class Justice:

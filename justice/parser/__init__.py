@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from pyquery import PyQuery as pq
 from urllib.parse import urlparse, parse_qs
-from . import line_parser
+
+from pyquery import PyQuery as pq
+
+from justice.parser import line_parser
 
 
 class Parser:

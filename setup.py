@@ -10,7 +10,7 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['dateparser>=1.0.0<2', 'pyquery>=1.4.3<2']
+requirements = ['dateparser>=1.0.0,<2', 'pyquery>=1.4.3,<2']
 
 setup_requirements = []
 
@@ -48,6 +48,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/SukiCZ/justice',
-    version='0.1.4',
+    version='0.1.5',
     zip_safe=False,
 )

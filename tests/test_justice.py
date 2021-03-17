@@ -5,7 +5,7 @@
 
 import unittest
 
-from justice import justice
+from justice import justice  # noqa: TODO Add unit-tests
 
 
 class TestJustice(unittest.TestCase):

@@ -12,9 +12,9 @@ with open('HISTORY.rst') as history_file:
 
 requirements = ['dateparser>=1.0.0<2', 'pyquery>=1.4.3<2']
 
-setup_requirements = [ ]
+setup_requirements = []
 
-test_requirements = [ ]
+test_requirements = ['flake8']
 
 setup(
     author="Jakub Boukal",

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 from pyquery import PyQuery as pq
 from urllib.parse import urlparse, parse_qs
-from justice.parser import line_parser
+from . import line_parser
 
 
 class Parser:

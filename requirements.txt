@@ -1,2 +1,0 @@
-dateparser==0.7.6
-pyquery==1.4.1

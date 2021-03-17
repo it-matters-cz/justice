@@ -1,5 +1,5 @@
-from .justice import Justice as PyJustice
+"""Top-level package for justice."""
 
-__all__ = (
-    'PyJustice',
-)
+__author__ = """Jakub Boukal"""
+__email__ = 'www.bagr@gmail.com'
+__version__ = '0.1.0'

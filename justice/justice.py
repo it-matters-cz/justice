@@ -1,8 +1,7 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+"""Main module."""
 from pyquery import PyQuery as pq
 
-from justice.parser import Parser
+from .parser import Parser
 
 
 class Justice:
@@ -15,18 +14,23 @@ class Justice:
         self.SEARCH_URL = search_url
         self.DETAIL_URL = detail_url
 
-    def search(self, string: str):
-        doc = pq(url=self.SEARCH_URL.format(string))
+    @classmethod
+    def search(cls, string: str):
+        doc = pq(url=cls.SEARCH_URL.format(string))
         return Parser.parse_list_result(doc)
 
-    def get_detail(self, subject_id: str, typ: str = "FULL"):
+    @classmethod
+    def get_detail(cls, subject_id: str, typ: str = "FULL"):
         """
         :param subject_id: ID of subject
         :param typ: FULL/VALID
         :return:
         """
-        assert typ in self.DETAIL_TYPE_MAPPING
-        doc = pq(url=self.DETAIL_URL.format(subject_id, self.DETAIL_TYPE_MAPPING[typ]))
+        assert typ in cls.DETAIL_TYPE_MAPPING, f"""`typ` has to be one of {[cls.DETAIL_TYPE_MAPPING.keys()]}.
+        Not {typ}"""
+        assert type(subject_id) == str, f"""`subject_id` has to be string, not {type(subject_id)}"""
+
+        doc = pq(url=cls.DETAIL_URL.format(subject_id, cls.DETAIL_TYPE_MAPPING[typ]))
         return Parser.parse_detail_result(doc)
 
 

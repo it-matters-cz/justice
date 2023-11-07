@@ -1,4 +1,6 @@
 """Main module."""
+from urllib.parse import quote
+
 from pyquery import PyQuery as pq
 
 from justice.parser import Parser
@@ -16,7 +18,7 @@ class Justice:
 
     @classmethod
     def search(cls, string: str):
-        doc = pq(url=cls.SEARCH_URL.format(string))
+        doc = pq(url=cls.SEARCH_URL.format(quote(string)))
         return Parser.parse_list_result(doc)
 
     @classmethod

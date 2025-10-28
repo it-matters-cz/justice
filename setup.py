@@ -8,7 +8,7 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['dateparser>=1.1.8,<2', 'pyquery>=1.4.3,<2']
+requirements = ['dateparser>=1.2.2,<2', 'pyquery>=2.0.1,<3']
 
 setup_requirements = []
 
@@ -24,10 +24,11 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.8',
-        'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
+        'Programming Language :: Python :: 3.13',
+        'Programming Language :: Python :: 3.14',
     ],
     description="A python package to download company information from https://justice.cz/",
     entry_points={

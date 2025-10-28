@@ -8,7 +8,7 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['dateparser>=1.1.8,<2', 'pyquery>=1.4.3,<2']
+requirements = ['dateparser>=1.1.8,<2', 'pyquery>=1.4.3,<3']
 
 setup_requirements = []
 
